@@ -152,7 +152,7 @@ const np = async (input = 'patch', options, {pkg, rootDir}) => {
 				),
 			},
 		] : [],
-		{
+		/*{
 			title: 'Bumping version using Yarn',
 			enabled: () => options.yarn === true,
 			skip() {
@@ -199,7 +199,7 @@ const np = async (input = 'patch', options, {pkg, rootDir}) => {
 
 				return exec('npm', args);
 			},
-		},
+		},*/
 		...options.runPublish ? [
 			{
 				title: `Publishing package using ${pkgManagerName}`,
